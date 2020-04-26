@@ -68,7 +68,8 @@ public final class FlutterCompassPlugin implements StreamHandler {
     }
 
     private FlutterCompassPlugin(Context context, int sensorType) {
-        filter = 1.0F;
+        // filter = 1.0F;
+        filter = 0.05F;
 
         sensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
         orientation = new float[3];
